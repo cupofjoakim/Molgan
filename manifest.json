@@ -1,0 +1,25 @@
+{
+    // Required for development
+    "AppName": { "Håkan Lånar" },
+    "BundleIdentifier": "",
+    "BundleType": "Application",
+    "BundleVersion": "0.1",
+    "Dependencies": { ... },
+    "SupportedDeviceClasses": [],
+
+    // Required for submission
+    "AppDescription": "",
+    "AppIcon": "",
+    "SupportedLanguages": [
+        "en"
+    ],
+    "VendorIdentifier": "com.company",
+
+    // Add any of these that you need
+    "AcceptedLinkTypes": [],
+    "AcceptedViewDropTypes": [],
+    "AppURL": "",
+    "BundleCopyright": "",
+    "DefaultTabs": [],
+    "RequiredPermissions": []
+}
