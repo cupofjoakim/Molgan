@@ -1,0 +1,164 @@
+@mixin mq($breakpoint) {
+    @if $breakpoint == l {
+        @media #{$media} and ($feature: $mq-breakpoint-l) { @content; }
+    }
+    @else if $breakpoint == m {
+        @media #{$media} and ($feature: $mq-breakpoint-m) { @content; }
+    }
+    @else if $breakpoint == s {
+        @media #{$media} and ($feature: $mq-breakpoint-s) { @content; }
+    }
+    @else if $breakpoint == xs {
+        @media #{$media} and ($feature: $mq-breakpoint-xs) { @content; }
+    }
+    /* Animation Property */
+    animation-property: width;
+    animation-property: height;
+    transition-duration: 0.5s;
+    /* webkit */
+    -webkit-animation-property: width;
+    -webkit-animation-property: height;
+    -webkit-transition-duration: 0.5s;
+    /* moz */
+    -moz-animation-property: width;
+    -moz-animation-property: height;
+    -moz-transition-duration: 0.5s;
+    /* opera */
+    -o-animation-property: width;
+    -o-animation-property: height;
+    -o-transition-duration: 0.5s;
+}
+
+@mixin column($num) {
+
+    background: #333;
+
+    float: left;
+    display: block;
+    margin: $grid-margin;
+    padding: $grid-padding;
+    overflow: hidden;
+
+    $margin-val: $grid-margin*2;
+
+    $item-width-l: (($mq-breakpoint-l - ($grid-section-padding*2))/$grid-span)*$num - $margin-val;
+    $item-width-m: (($mq-breakpoint-m - ($grid-section-padding*2))/$grid-span)*$num - $margin-val;
+    $item-width-s: (($mq-breakpoint-s - ($grid-section-padding*2))/$grid-span)*$num - $margin-val;
+    $item-width-xs: (($mq-breakpoint-xs - ($grid-section-padding*2))/$grid-span)*$num - $margin-val;
+
+    &.round {
+        height: $item-width-l;
+        padding: 0;
+        border-radius: $item-width-l/2;
+    }
+
+    width: $item-width-l;
+
+    @include mq(l) {
+        width: $item-width-m;
+        &.round {
+            height: $item-width-m;
+            border-radius: $item-width-m/2;
+        }
+    }
+    @include mq(m) {
+        width: $item-width-s;
+        &.round {
+            height: $item-width-s;
+            border-radius: $item-width-s/2;
+        }
+    }
+    @include mq(s) {
+        width: $item-width-xs;
+        &.round {
+            height: $item-width-xs;
+            border-radius: $item-width-xs/2;
+        }
+    }
+    @include mq(xs) {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@mixin border-radius($val)
+{
+    border-radius: $val;
+    -moz-border-radius: $val;
+    -webkit-border-radius: $val;
+}
+
+@mixin box-shadow($val1, $val2, $val3, $color)
+{
+    -box-shadow: $val1 $val2 $val3 $color;
+    -moz-box-shadow: $val1 $val2 $val3 $color;
+    -webkit-box-shadow: $val1 $val2 $val3 $color;
+}
+
+@mixin box-shadow-inset($val1, $val2, $val3, $color1, $val4, $val5, $val6, $color2)
+{
+    -box-shadow: $val1 $val2 $val3 $color1, inset $val4 $val5 $val6 $color2;
+    -moz-box-shadow: $val1 $val2 $val3 $color1, inset $val4 $val5 $val6 $color2;
+    -webkit-box-shadow: $val1 $val2 $val3 $color1, inset $val4 $val5 $val6 $color2;
+}
+
+
+@mixin transform-scale($val)
+{
+    -webkit-transform: scale($val);
+    -moz-transform: scale($val);
+    -ms-transform: scale($val);
+    -o-transform: scale($val);
+    transform: scale($val);
+}
+
+@mixin transition($val)
+{
+    -webkit-transition: $val;
+    -moz-transition: $val;
+    -ms-transition: $val;
+    -o-transition: $val;
+    transition: $val;
+}
+
+@mixin button-small
+{
+    border: 0px;
+    margin: 5px;
+    cursor: pointer;
+    color: $off-white;
+    padding: 1px 5px 2px 5px;
+    background: $light-grey;
+    text-shadow: 0px 1px 0px $light-grey;
+
+    @include border-radius(0.5em);
+    @include box-shadow(0, 1px, 3px, $shadow, 0, -1px, 1px, $shadow);
+
+}
+
+@mixin button-large
+{
+    font-size: 1.1em;
+    border: 0;
+    height: 30px;
+    float: right;
+    padding: 4px 15px 5px 15px;
+    margin: 5px 3px 3px 3px;
+    cursor: pointer;
+    @include border-radius(1em);
+
+    background: -webkit-gradient(linear, left top, left bottom, from($off-white), to($ultra-light-grey));
+    background: -moz-linear-gradient(top,  $off-white,  $ultra-light-grey);
+    text-shadow: 0px 1px 0px $off-white;
+    @include box-shadow(0, 0, 5px, $shadow, 0, 0, 0, $shadow);
+
+    &:hover
+    {
+        color: #000;
+        background: -webkit-gradient(linear, left top, left bottom, from($off-white), to($middle-green));
+        background: -moz-linear-gradient(top,  $off-white,  $middle-green);
+
+        text-shadow: 0 1px 0px $off-white;
+        @include box-shadow(0, 0, 5px, $shadow, 0, 0, 0, $shadow);
+    }
+}

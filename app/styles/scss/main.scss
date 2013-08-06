@@ -1,0 +1,31 @@
+@import "_libs/_normalize.scss";
+@import "_all/_import.scss";
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    color: $black;
+    padding:0;
+    margin:0;
+    border:0;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family: 'FuturaComMedium', "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+}
+ul,
+ol {
+    margin:0;
+    padding:0;
+    list-style:0;
+}
+h1,
+h2,
+h3,
+h4,
+li,
+a,
+p {
+    color: $black;
+    font-size: 13px;
+    line-height: 16px;
+}
