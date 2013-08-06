@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('hakanlanar')
+
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       $scope.time = time
@@ -18,5 +19,6 @@ angular.module('hakanlanar')
     		// place result route here
     	}
     }
+    
   });
 
