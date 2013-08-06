@@ -33,7 +33,6 @@ angular.module('hakanlanar')
 
                     randoms.push(data[0].tracks[i]);
                 }
-
                 $scope.songs = randoms;
             },
             time = 10,

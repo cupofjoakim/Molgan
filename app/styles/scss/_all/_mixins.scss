@@ -171,3 +171,8 @@
          -o-transform: $prop;
             transform: $prop;
 }
+
+@mixin inlineblock {
+    display: inline-block;
+    vertical-align: top;
+}

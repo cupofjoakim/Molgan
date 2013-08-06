@@ -593,7 +593,19 @@ h1 {
   text-align: center;
 }
 
-/* line 38, ../scss/main.scss */
+/* line 41, ../scss/main.scss */
+.start-btn {
+  background: #36becc;
+  display: block;
+  color: white;
+  border-radius: 2px;
+  padding: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  max-width: 10em;
+}
+
+/* line 52, ../scss/main.scss */
 .timebar-wrapper {
   overflow-x: hidden;
   background: #d9d7d7;
@@ -606,11 +618,14 @@ h1 {
   transform: rotateZ(-5deg);
 }
 
-/* line 46, ../scss/main.scss */
+/* line 60, ../scss/main.scss */
 .timebar {
   height: 3em;
   background: #36becc;
   color: white;
+}
+/* line 64, ../scss/main.scss */
+.timebar.active {
   -webkit-transition: -webkit-transform 250ms;
   -moz-transition: -webkit-transform 250ms;
   -ms-transition: -webkit-transform 250ms;
@@ -618,11 +633,22 @@ h1 {
   transition: -webkit-transform 250ms;
 }
 
-/* line 53, ../scss/main.scss */
+/* line 69, ../scss/main.scss */
 .song-entity {
   display: none;
 }
-/* line 56, ../scss/main.scss */
+/* line 72, ../scss/main.scss */
 .song-entity.shown {
   display: block;
+}
+
+/* line 76, ../scss/main.scss */
+.choices {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 80, ../scss/main.scss */
+.results {
+  display: none;
 }
