@@ -39,7 +39,8 @@ h1 {
     overflow-x: hidden;
     background: $lightgray;
     width: 28.750em;
-    margin: 0 auto
+    margin: 0 auto;
+    @include transform(rotateZ(-5deg));
 }
 
 .timebar {

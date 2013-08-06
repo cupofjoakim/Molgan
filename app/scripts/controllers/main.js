@@ -10,15 +10,16 @@ angular.module('hakanlanar')
     countDown();
     function countDown(){
     	 timer = setTimeout(function() {
+    	 	time -= 1;
 			posX -= timeBarWidth / 10;
 			timeBar.css({'-webkit-transform': 'translateX('+ posX +'px)'});
     		countDown();
         },1000);
-    	if (time <= 0) {
+    	if (time === 0) {
     		alert('GAME OVER');
     		// place result route here
     	}
     }
-    
+
   });
 

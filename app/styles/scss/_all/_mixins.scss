@@ -162,3 +162,12 @@
         @include box-shadow(0, 0, 5px, $shadow, 0, 0, 0, $shadow);
     }
 }
+
+@mixin transform($prop)
+{
+    -webkit-transform: $prop;
+       -moz-transform: $prop;
+        -ms-transform: $prop;
+         -o-transform: $prop;
+            transform: $prop;
+}
