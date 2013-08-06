@@ -1,13 +1,17 @@
-<div class="hero-unit">
-  <h1>Speltitel</h1>
-  <div class="timebar-wrapper">
-  	<div class="timebar"></div>
-  </div>
-  <div class="timer"></div>
-  <div class="question-number">1</div>
-  <div class="choices">1</div>
-  <div class="choices">2</div>
-  <div class="choices">3</div>
+<div ng-repeat="thing in songs">
+    <div class="hero-unit">
+        <h1>{{thing.titel}}</h1>
+        <div class="timebar-wrapper">
+            <div class="timebar">
+            </div>
+        </div>
+        <div class="timer"></div>
+        <div class="question-number">1</div>
+        <div ng-repeat="suggestion in thing.suggestions" class="choices">
+            {{suggestion.title}}
+            {{suggestion.artist}}
+        </div>
 
-  <a href="#/results">slut</a>
+        <a href="#/results">slut</a>
+    </div>
 </div>

@@ -3,18 +3,334 @@
         "tracks": [
 
             {
-                "exempeltitel": "Känn ingen sorg",
-                "orginal": {
-                    "title": "Fyll på en öl",
-                    "artist": "Magnus Uggla"
-                }
+                "id": 123,
+                "titel": "Känn ingen sorg",
+                "uri": "",
+                "yt": "",
+                "startsat": "",
+                "suggestions": [
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": true
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    }
+                ]
             },
             {
-                "exempeltitel": "17",
-                "orginal": {
-                    "title": "Småbarn är vackra",
-                    "artist": "Johnny Cash"
-                }
+                "id": 123,
+                "titel": "17",
+                "uri": "",
+                "yt": "",
+                "startsat": "",
+                "suggestions": [
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": true
+                    }
+                ]
+            },
+            {
+                "id": 123,
+                "titel": "17",
+                "uri": "",
+                "yt": "",
+                "startsat": "",
+                "suggestions": [
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": true
+                    }
+                ]
+            },
+            {
+                "id": 123,
+                "titel": "17",
+                "uri": "",
+                "yt": "",
+                "startsat": "",
+                "suggestions": [
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": true
+                    }
+                ]
+            },
+            {
+                "id": 123,
+                "titel": "17",
+                "uri": "",
+                "yt": "",
+                "startsat": "",
+                "suggestions": [
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": true
+                    }
+                ]
+            },
+            {
+                "id": 123,
+                "titel": "17",
+                "uri": "",
+                "yt": "",
+                "startsat": "",
+                "suggestions": [
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": true
+                    }
+                ]
+            },
+            {
+                "id": 123,
+                "titel": "17",
+                "uri": "",
+                "yt": "",
+                "startsat": "",
+                "suggestions": [
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": true
+                    }
+                ]
+            },
+            {
+                "id": 123,
+                "titel": "17",
+                "uri": "",
+                "yt": "",
+                "startsat": "",
+                "suggestions": [
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": true
+                    }
+                ]
+            },
+            {
+                "id": 123,
+                "titel": "17",
+                "uri": "",
+                "yt": "",
+                "startsat": "",
+                "suggestions": [
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": true
+                    }
+                ]
+            },
+            {
+                "id": 123,
+                "titel": "17",
+                "uri": "",
+                "yt": "",
+                "startsat": "",
+                "suggestions": [
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Fyll på en öl",
+                        "artist": "Magnus Uggla",
+                        "startsat": "",
+                        "uri": "",
+                        "yt": "",
+                        "isoriginal": true
+                    }
+                ]
             }
 
         ]
