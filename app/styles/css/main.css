@@ -481,6 +481,16 @@ p {
 h1 {
   text-align: center; }
 
+.start-btn {
+  background: #36becc;
+  display: block;
+  color: white;
+  border-radius: 2px;
+  padding: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  max-width: 10em; }
+
 .timebar-wrapper {
   overflow-x: hidden;
   background: #d9d7d7;
@@ -495,12 +505,13 @@ h1 {
 .timebar {
   height: 3em;
   background: #36becc;
-  color: white;
-  -webkit-transition: -webkit-transform 250ms;
-  -moz-transition: -webkit-transform 250ms;
-  -ms-transition: -webkit-transform 250ms;
-  -o-transition: -webkit-transform 250ms;
-  transition: -webkit-transform 250ms; }
+  color: white; }
+  .timebar.active {
+    -webkit-transition: -webkit-transform 250ms;
+    -moz-transition: -webkit-transform 250ms;
+    -ms-transition: -webkit-transform 250ms;
+    -o-transition: -webkit-transform 250ms;
+    transition: -webkit-transform 250ms; }
 
 .choices {
   display: inline-block;

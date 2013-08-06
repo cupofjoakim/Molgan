@@ -35,6 +35,17 @@ h1 {
     text-align: center;
 }
 
+.start-btn {
+    background: $blue;
+    display: block;
+    color: white;
+    border-radius: 2px;
+    padding: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    max-width: 10em;
+}
+
 .timebar-wrapper {
     overflow-x: hidden;
     background: $lightgray;
@@ -47,7 +58,9 @@ h1 {
     height: 3em;
     background: $blue;
     color: white;
-    @include transition(-webkit-transform 250ms);
+    &.active {
+        @include transition(-webkit-transform 250ms);    
+    }
 }
 
 .choices {

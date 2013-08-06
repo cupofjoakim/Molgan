@@ -21,10 +21,10 @@ angular.module('hakanlanar')
         }
 
         $scope.songs = randoms;
-        $scope.time = time
-
-        var timer, time = 10, posX = 0, timeBar = $('.timebar'), timeBarWidth = timeBar.width(), score = 10;
+        setTimeout(function(){
+        	var timer, time = 10, posX = 0, timeBar = $('.timebar.active'), timeBarWidth = timeBar.width(), score = 10;
         countDown();
+        console.log(timeBar);
         function countDown(){
             timer = setTimeout(function() {
                 posX -= timeBarWidth / 10;
@@ -36,5 +36,7 @@ angular.module('hakanlanar')
                 // place result route here
             }
         }
+        }, 100);
+        
     });
 });
