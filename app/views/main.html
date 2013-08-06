@@ -1,8 +1,17 @@
 <div ng-repeat="thing in songs">
-    {{thing.titel}}
-    Håkan hellström
-    <div ng-repeat="suggestion in thing.suggestions">
-        {{suggestion.title}}
-        {{suggestion.artist}}
+    <div class="hero-unit">
+        <h1>{{thing.titel}}</h1>
+        <div class="timebar-wrapper">
+            <div class="timebar">
+            </div>
+        </div>
+        <div class="timer"></div>
+        <div class="question-number">1</div>
+        <div ng-repeat="suggestion in thing.suggestions" class="choices">
+            {{suggestion.title}}
+            {{suggestion.artist}}
+        </div>
+
+        <a href="#/results">slut</a>
     </div>
 </div>

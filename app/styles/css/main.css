@@ -454,8 +454,9 @@ table {
 body {
   color: black;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   border: 0;
+  width: 60.000em;
   -webkit-user-select: none;
   -webkit-text-size-adjust: none;
   font-family: "Helvetica", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif; }
@@ -476,3 +477,22 @@ p {
   color: black;
   font-size: 13px;
   line-height: 16px; }
+
+h1 {
+  text-align: center; }
+
+.timebar-wrapper {
+  overflow-x: hidden;
+  background: #d9d7d7;
+  width: 28.750em;
+  margin: 0 auto; }
+
+.timebar {
+  height: 3em;
+  background: #36becc;
+  color: white;
+  -webkit-transition: -webkit-transform 250ms;
+  -moz-transition: -webkit-transform 250ms;
+  -ms-transition: -webkit-transform 250ms;
+  -o-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms; }

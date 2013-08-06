@@ -1,14 +1,17 @@
 {
     // Required for development
-    "AppName": { "Håkan Lånar" },
+    "AppName": { "hakanlanar" },
     "BundleIdentifier": "",
     "BundleType": "Application",
     "BundleVersion": "0.1",
-    "Dependencies": { ... },
+    "Dependencies": { 
+        "api": "1.0.0",
+        "views": "1.0.0" 
+    },
     "SupportedDeviceClasses": [],
 
     // Required for submission
-    "AppDescription": "",
+    "AppDescription": "Håkan lånar en låt eller två.",
     "AppIcon": "",
     "SupportedLanguages": [
         "en"
