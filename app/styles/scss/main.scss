@@ -8,7 +8,7 @@ body {
     padding:0;
     margin:0 auto;
     border:0;
-    width: 60.000em;
+    width: 100%;
     -webkit-user-select:none;
     -webkit-text-size-adjust:none;
     font-family: "Helvetica", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
@@ -33,28 +33,74 @@ p {
 
 h1 {
     text-align: center;
+    color: $blue;
+    font-size: 3em;
+    font-family: 'Helvetica CY';
+    position: absolute;
+    left: 600px;
+    top: 155px;
 }
 
 .container {
+
+    background: url(../../../images/hakan_bg.jpg) repeat-x; 
+    background-position: 50% 0%;
+    padding: 1em 0 0 0;
+    // -webkit-background-size: cover;
+    //    -moz-background-size: cover;
+    //      -o-background-size: cover;
+    //         background-size: cover;
+    width: 1280px;
+    height: 788px;
+    margin: 0 auto;
+    header {
+        background: url(../../../images/header.png) no-repeat;
+        width: 58.750em;
+        height: 8.875em;
+        margin: 0 auto;
+    }
 }
 
-.start-btn {
-    background: $blue;
-    display: block;
-    color: white;
-    border-radius: 2px;
-    padding: 1em;
-    text-decoration: none;
-    text-transform: uppercase;
-    max-width: 10em;
+.intro-container {
+    position: relative;
+    width: 960px;
+    height: 500px;
+    margin: 0 auto;
+    a {
+        position: absolute;
+        left: 340px;
+        top: 100px;
+        display: block;
+        width: 236px;
+        height: 86px;
+        background: url(../../../images/start_button.png);
+    }
+
+    div {
+        position: absolute;
+        left: 487px;
+        top: 15px;
+        width: 468px;
+        height: 268px;
+        background: url(../../../images/prat_start.png);
+        p {
+            position: absolute;
+            width: 263px;
+            color: $blue;
+            left: 144px;
+        }
+    }
 }
+
 
 .timebar-wrapper {
     overflow-x: hidden;
     background: $lightgray;
-    width: 28.750em;
-    margin: 0 auto;
+    width: 25.750em;
+    margin: 7em auto 0 auto;
+    padding: 1px;
     @include transform(rotateZ(-5deg));
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,.6);
 }
 
 .timebar {
@@ -74,7 +120,35 @@ h1 {
     }
 }
 .choices {
+    width: 178px;
+    height: 171px;
+    background: url(../../../images/val_button.png);
     @include inlineblock;
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em; /* Adjusts for spacing */
+    }
+
+    p {
+        text-align: center;
+        color: $red;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 150%;
+        width: 100%;
+        padding: 0 1.5em;
+        margin: 0 auto;
+        vertical-align: middle;
+        display: inline-block;
+    }
+}
+
+.choices-container {
+    width: 534px;
+    margin: 80px auto 0 auto;
 }
 
 .results {

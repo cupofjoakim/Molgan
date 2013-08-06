@@ -1,13 +1,12 @@
 <div ng-repeat="thing in songs">
     <div class="hero-unit song-entity">
-        <h1>{{thing.titel}}</h1>
+        <h1>8p</h1>
         <div class="timebar-wrapper">
             <div class="timebar"></div>
         </div>
         <div class="timer"></div>
-        <div ng-repeat="suggestion in thing.suggestions" class="choices">
-            {{suggestion.title}}
-            {{suggestion.artist}}
+        <div class="choices-container">
+        	<div ng-repeat="suggestion in thing.suggestions" class="choices"><p>{{suggestion.title}}</p></div>
         </div>
     </div>
 </div>
