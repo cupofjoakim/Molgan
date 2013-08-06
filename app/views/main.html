@@ -5,7 +5,7 @@
             <div class="timebar"></div>
         </div>
         <div class="timer"></div>
-        <div ng-repeat="suggestion in thing.suggestions" class="choices">
+        <div ng-repeat="suggestion in thing.suggestions" class="choices {{suggestion.isoriginal}}">
             {{suggestion.title}}
             {{suggestion.artist}}
         </div>
@@ -13,5 +13,5 @@
 </div>
 <div class="results">
 	<p>Din poäng blev:</p>
-	<h2>56</h2>
+	<h2 class="pointstotal"></h2>
 </div>

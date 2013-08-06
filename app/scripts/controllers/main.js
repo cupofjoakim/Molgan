@@ -7,7 +7,8 @@ angular.module('hakanlanar')
         arr = [],
         setRandomSongs = function(){
                 while(arr.length < 10){ // Get 10 random numbers
-                    var randomnumber=Math.ceil(Math.random()*10)
+                    var randomnumber=Math.ceil(Math.random()*data[0].tracks.length)
+                    console.log(randomnumber);
                     var found=false;
 
                     for(var i=0;i<arr.length;i++){
@@ -17,26 +18,13 @@ angular.module('hakanlanar')
                 }
 
                 for (var i=0;i<arr.length;i++){ // Slumpa tio låtar
-                    if(data[0].tracks[i].uri === "") {
-                        data[0].tracks[i].goYoutube = true;
-                    } else {
-                        data[0].tracks[i].goYoutube = false;
-                    }
-
-                    for (var k = data[0].tracks[i].suggestions.length - 1; k >= 0; k--) {
-                        if(data[0].tracks[i].suggestions[k].uri === "") {
-                            data[0].tracks[i].suggestions[k].goYoutube = true;
-                        } else {
-                            data[0].tracks[i].suggestions[k].goYoutube = false;
-                        }
-                    };
-
-                    randoms.push(data[0].tracks[i]);
+                    randoms.push(data[0].tracks[arr[i]]);
                 }
                 $scope.songs = randoms;
             },
             time = 10,
             current = 0,
+            answers = [],
             timer,
             startSong = function(){
                 if (current === 0){
@@ -44,7 +32,7 @@ angular.module('hakanlanar')
                 }
 
                 var timeBar = $('.shown').find('.timebar'),
-                    posX = 0;
+                posX = 0;
 
                 var countDown = function(){
                     var timeBarWidth = timeBar.width();
@@ -52,11 +40,10 @@ angular.module('hakanlanar')
                         posX -= timeBarWidth / 10;
                         timeBar.css({'-webkit-transform': 'translateX('+ posX +'px)'});
                         time = time - 1;
-                        console.log('woooo');
 
                         if (time <= 0) {
                             clearInterval(timer);
-                            console.log('GAME OVER');
+                            timeOut();
                         }
                     }, 1000);
 
@@ -71,7 +58,7 @@ angular.module('hakanlanar')
                 time = 10;
                 $($('.song-entity')[current]).toggleClass('shown');
 
-                if (current === 10){
+                if (current === 9){
                     showResults();
                 } else {
                     current = current + 1;
@@ -79,19 +66,30 @@ angular.module('hakanlanar')
                     startSong();
                 }
             },
+            timeOut = function(){
+                answers.push({"nr": current, "correct": false , "points": 0});
+                nextSong();
+            },
             showResults = function(){
-                $('.results').show
+                $('.pointstotal').html($scope.points);
+                $('.results').show();
             };
 
             setRandomSongs();
-            $scope.time = time
+            $scope.time = time;
+            $scope.points = 0;
 
             setTimeout(function(){
                 startSong();
                 $('.choices').on('click', function(){
-                    clearInterval(timer);
+                    if ($(this).hasClass('original')){
+                        answers.push({"nr": current, "correct": true, "points": time});
+                        $scope.points = $scope.points + time;
+                    } else {
+                        answers.push({"nr": current, "correct": false , "points": 0});
+                    }
+
                     nextSong();
-                    console.log('next-song');
                 });
             },100);
         });
