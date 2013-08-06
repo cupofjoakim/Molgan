@@ -3,330 +3,340 @@
         "tracks": [
 
             {
-                "id": 123,
-                "titel": "Känn ingen sorg",
+                "id": 1,
+                "artist": "Sonic the Hedgehog",
+                "titel": "Bridge Zone (8-bit Sega Master System)",
                 "uri": "",
-                "yt": "",
-                "startsat": "",
+                "yt": "G7EkJUEh-LU",
+                "startsat": "00:00",
                 "suggestions": [
                     {
-                        "title": "Fyll på en öl",
+                        "title": "Känn ingen sorg för mig Göteborg",
                         "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "startsat": "00:00",
+                        "uri": "2yz5IaQLnO8WBCIWMXoRBS",
                         "yt": "",
                         "isoriginal": true
                     },
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "En vän med en bil",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "0FkloQbDAl1xjM1UC2jBIN",
                         "yt": "",
                         "isoriginal": false
                     },
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "Kom igen Lena!",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "7zQXlpaBniXYrmDfiCzI9t",
                         "yt": "",
                         "isoriginal": false
                     }
                 ]
             },
             {
-                "id": 123,
-                "titel": "17",
-                "uri": "",
+                "id": 2,
+                "titel": "Desperado",
+                "artist": "Johnny Cash",
+                "uri": "2SBt8pcIYW84fJwGdsODvv",
                 "yt": "",
-                "startsat": "",
+                "startsat": "00:00",
                 "suggestions": [
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "Nu kan du få mig så lätt",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "2ENzbkJJShkj1d9mPKofQ9",
+                        "yt": "",
+                        "isoriginal": true
+                    },
+                    {
+                        "title": "Känn ingen sorg för mig Göteborg",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "2yz5IaQLnO8WBCIWMXoRBS",
                         "yt": "",
                         "isoriginal": false
                     },
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "Ramlar",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "6BvtcJlv2kdlUodAt7PD6c",
+                        "yt": "",
+                        "isoriginal": false
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "titel": "American Girl",
+                "artist": "Tom Petty and the Heartbreakers",
+                "uri": "1tGfjSZgK6VwNZlWgov0K0",
+                "yt": "",
+                "startsat": "00:03",
+                "suggestions": [
+                    {
+                        "title": "Kom igen Lena",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "7zQXlpaBniXYrmDfiCzI9t",
+                        "yt": "",
+                        "isoriginal": true
+                    },
+                    {
+                        "title": "Ramlar",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "6BvtcJlv2kdlUodAt7PD6c",
                         "yt": "",
                         "isoriginal": false
                     },
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "Mitt Gullbergs Kaj Paradis",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "6PLUus6Iuz5jXuuuRhyGsf",
+                        "yt": "",
+                        "isoriginal": false
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "titel": "I want you",
+                "artist": "Bob Dylan",
+                "uri": "7tJQ4Ekp2vN3NlI3vJJW3v",
+                "yt": "",
+                "startsat": "00:00",
+                "suggestions": [
+                    {
+                        "title": "En vän med en bil",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "0FkloQbDAl1xjM1UC2jBIN",
+                        "yt": "",
+                        "isoriginal": true
+                    },
+                    {
+                        "title": "Klubbland",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "6QN99Sr4CgkxOG0AiUuIz9",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Zigenarliv Dreamin",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "0InVRJJZvfxznGPhfU8IwR",
+                        "yt": "",
+                        "isoriginal": false
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "titel": "Going up the country",
+                "artist": "Canned Heat",
+                "uri": "57460SJgSpCXaRJ9YIYHxy",
+                "yt": "",
+                "startsat": "00:00",
+                "suggestions": [
+                    {
+                        "title": "En midsommarnattsdröm",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "2PD70CPXPOsnTxJdoaaN95",
+                        "yt": "",
+                        "isoriginal": true
+                    },
+                    {
+                        "title": "Den fulaste flickan i världen",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "6dH1kap3QZhnt5Q27lAgQQ",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Man måste dö några gånger innan man kan leva",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "3dHuioB3G88EKsiP8otWdn",
+                        "yt": "",
+                        "isoriginal": false
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "titel": "Opus 40",
+                "artist": "Mercury Rev",
+                "uri": "6BXG2LREQICFj3uGJ2vdNf",
+                "yt": "",
+                "startsat": "00:00",
+                "suggestions": [
+                    {
+                        "title": "Visa vid vindens ängar",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:=0",
+                        "uri": "0fmQ692NrBq51GSFVNV3og",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Jag ger dig min morgon",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "1LltqAXwHkjciSraqCO5tn",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "Det är så jag säger det",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "3nJtKV23cLqdMzurBX49Tq",
                         "yt": "",
                         "isoriginal": true
                     }
                 ]
             },
             {
-                "id": 123,
-                "titel": "17",
-                "uri": "",
+                "id": 7,
+                "titel": "The Caterpillar",
+                "artist": "The Cure",
+                "uri": "4fEi5tqVJ30w66oCe9MHul",
                 "yt": "",
-                "startsat": "",
+                "startsat": "00:30",
                 "suggestions": [
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "En vän med en bil",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "0FkloQbDAl1xjM1UC2jBIN",
                         "yt": "",
                         "isoriginal": false
                     },
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "Uppsnärjd i det blå",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "2z3qJXTXRes9cqkPRKqN4g",
                         "yt": "",
                         "isoriginal": false
                     },
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "För en lång lång tid",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "3fq2Mnn7USvWSGwALCzsFV",
                         "yt": "",
                         "isoriginal": true
                     }
                 ]
             },
             {
-                "id": 123,
-                "titel": "17",
-                "uri": "",
+                "id": 8,
+                "titel": "Juli",
+                "artist": "Björn Olsson",
+                "uri": "0BqvvDT86H3mu4R24SKHy8",
                 "yt": "",
-                "startsat": "",
+                "startsat": "00:15",
                 "suggestions": [
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "Förhoppningar och regnbågar",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "1w0KiISRudPcNCW1SfGk7D",
                         "yt": "",
                         "isoriginal": false
                     },
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "Klubbland",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "6QN99Sr4CgkxOG0AiUuIz9",
                         "yt": "",
                         "isoriginal": false
                     },
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "Jag har varit i alla städer",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:12",
+                        "uri": "4QmTigFSvsEPWc93V6EI7o",
                         "yt": "",
                         "isoriginal": true
                     }
                 ]
             },
             {
-                "id": 123,
-                "titel": "17",
-                "uri": "",
+                "id": 9,
+                "titel": "I fought the law",
+                "artist": "The Clash",
+                "uri": "19Ze27TdtFYssgeGCStFIC",
                 "yt": "",
-                "startsat": "",
+                "startsat": "00:18",
                 "suggestions": [
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": false
-                    },
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": false
-                    },
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "Dom Fyra Årstiderna",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "5aK8mwMJzvYoXAPrhXgPdn",
                         "yt": "",
                         "isoriginal": true
+                    },
+                    {
+                        "title": "Här kommer lyckan för hundar som oss",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "0H891KFUg15VBMWBZEiIVy",
+                        "yt": "",
+                        "isoriginal": false
+                    },
+                    {
+                        "title": "13 (Thirteen)",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "3bZKBPdT5BmKmDNm0U2P9P",
+                        "yt": "",
+                        "isoriginal": false
                     }
                 ]
             },
             {
-                "id": 123,
-                "titel": "17",
-                "uri": "",
+                "id": 10,
+                "titel": "Thirteen",
+                "artist": "Big Star",
+                "uri": "3BSpuy2yHhoEazfXVU7WGq",
                 "yt": "",
-                "startsat": "",
+                "startsat": "00:00",
                 "suggestions": [
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "Jag har varit i alla städer",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "4QmTigFSvsEPWc93V6EI7o",
                         "yt": "",
                         "isoriginal": false
                     },
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "Valborg",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "0Hz0ySp6XYrBhEQPU16Hz8",
                         "yt": "",
                         "isoriginal": false
                     },
                     {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": true
-                    }
-                ]
-            },
-            {
-                "id": 123,
-                "titel": "17",
-                "uri": "",
-                "yt": "",
-                "startsat": "",
-                "suggestions": [
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": false
-                    },
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": false
-                    },
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": true
-                    }
-                ]
-            },
-            {
-                "id": 123,
-                "titel": "17",
-                "uri": "",
-                "yt": "",
-                "startsat": "",
-                "suggestions": [
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": false
-                    },
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": false
-                    },
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": true
-                    }
-                ]
-            },
-            {
-                "id": 123,
-                "titel": "17",
-                "uri": "",
-                "yt": "",
-                "startsat": "",
-                "suggestions": [
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": false
-                    },
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": false
-                    },
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": true
-                    }
-                ]
-            },
-            {
-                "id": 123,
-                "titel": "17",
-                "uri": "",
-                "yt": "",
-                "startsat": "",
-                "suggestions": [
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": false
-                    },
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
-                        "yt": "",
-                        "isoriginal": false
-                    },
-                    {
-                        "title": "Fyll på en öl",
-                        "artist": "Magnus Uggla",
-                        "startsat": "",
-                        "uri": "",
+                        "title": "13",
+                        "artist": "Håkan Hellström",
+                        "startsat": "00:00",
+                        "uri": "44n32XsekQlbtBouXfoddV",
                         "yt": "",
                         "isoriginal": true
                     }

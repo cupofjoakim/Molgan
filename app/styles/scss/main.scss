@@ -35,6 +35,9 @@ h1 {
     text-align: center;
 }
 
+.container {
+}
+
 .start-btn {
     background: $blue;
     display: block;
@@ -65,4 +68,8 @@ h1 {
 
 .choices {
     @include inlineblock;
+}
+
+.results {
+    display: none;
 }

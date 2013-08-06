@@ -516,3 +516,6 @@ h1 {
 .choices {
   display: inline-block;
   vertical-align: top; }
+
+.results {
+  display: none; }

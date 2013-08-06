@@ -11,10 +11,6 @@ angular.module('hakanlanar', [])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/results', {
-        templateUrl: 'views/results.html',
-        controller: 'ResultsCtrl'
-      })
       .otherwise({
         redirectTo: '/'
       });
