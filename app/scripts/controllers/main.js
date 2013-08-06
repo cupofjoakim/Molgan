@@ -5,12 +5,6 @@ angular.module('hakanlanar')
     $http.get('data/songs.json').success(function(data) {
         var randoms = [],
             arr = [];
-
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      $scope.time = time
-    ];
-  });
         while(arr.length < 10){
             var randomnumber=Math.ceil(Math.random()*10)
             var found=false;
@@ -38,7 +32,7 @@ angular.module('hakanlanar')
                 countDown();
             },1000);
             if (time <= 0) {
-                alert('GAME OVER');
+                console.log('GAME OVER');
                 // place result route here
             }
         }

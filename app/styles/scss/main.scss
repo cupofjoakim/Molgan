@@ -49,3 +49,7 @@ h1 {
     color: white;
     @include transition(-webkit-transform 250ms);
 }
+
+.choices {
+    @include inlineblock;
+}
