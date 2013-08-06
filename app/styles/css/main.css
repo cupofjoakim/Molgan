@@ -485,7 +485,12 @@ h1 {
   overflow-x: hidden;
   background: #d9d7d7;
   width: 28.750em;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-transform: rotateZ(-5deg);
+  -moz-transform: rotateZ(-5deg);
+  -ms-transform: rotateZ(-5deg);
+  -o-transform: rotateZ(-5deg);
+  transform: rotateZ(-5deg); }
 
 .timebar {
   height: 3em;
