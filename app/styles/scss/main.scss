@@ -49,3 +49,11 @@ h1 {
     color: white;
     @include transition(-webkit-transform 250ms);
 }
+
+.song-entity {
+    display: none;
+
+    &.shown {
+        display: block;
+    }
+}

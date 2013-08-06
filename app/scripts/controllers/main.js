@@ -3,7 +3,7 @@
 angular.module('hakanlanar')
 .controller('MainCtrl', function ($scope, $http) {
     $http.get('data/songs.json').success(function(data) {
-    var randoms = [],
+        var randoms = [],
         arr = [],
         setRandomSongs = function(){
                 while(arr.length < 10){ // Get 10 random numbers
@@ -34,24 +34,66 @@ angular.module('hakanlanar')
                     randoms.push(data[0].tracks[i]);
                 }
 
-            $scope.songs = randoms;
-        };
+                $scope.songs = randoms;
+            },
+            time = 10,
+            current = 0,
+            timer,
+            startSong = function(){
+                if (current === 0){
+                    $($('.song-entity')[current]).toggleClass('shown');
+                }
 
-    setRandomSongs();
-    $scope.time = time
+                var timeBar = $('.shown').find('.timebar'),
+                    posX = 0;
 
-    var timer, time = 10, posX = 0, timeBar = $('.timebar'), timeBarWidth = timeBar.width(), score = 10;
-    countDown();
-    function countDown(){
-        timer = setTimeout(function() {
-            posX -= timeBarWidth / 10;
-            timeBar.css({'-webkit-transform': 'translateX('+ posX +'px)'});
-            countDown();
-        },1000);
-        if (time <= 0) {
-            alert('GAME OVER');
-                // place result route here
-            }
-        }
-    });
+                var countDown = function(){
+                    var timeBarWidth = timeBar.width();
+                    var timer = setInterval(function(){
+                        posX -= timeBarWidth / 10;
+                        timeBar.css({'-webkit-transform': 'translateX('+ posX +'px)'});
+                        time = time - 1;
+                        console.log('woooo');
+
+                        if (time <= 0) {
+                            clearInterval(timer);
+                            console.log('GAME OVER');
+                        }
+                    }, 1000);
+
+                    $('.choices').on('click', function(){
+                        clearInterval(timer);
+                    });
+                }
+
+                countDown();
+            },
+            nextSong = function(){
+                time = 10;
+                $($('.song-entity')[current]).toggleClass('shown');
+
+                if (current === 10){
+                    showResults();
+                } else {
+                    current = current + 1;
+                    $($('.song-entity')[current]).toggleClass('shown');
+                    startSong();
+                }
+            },
+            showResults = function(){
+                $('.results').show
+            };
+
+            setRandomSongs();
+            $scope.time = time
+
+            setTimeout(function(){
+                startSong();
+                $('.choices').on('click', function(){
+                    clearInterval(timer);
+                    nextSong();
+                    console.log('next-song');
+                });
+            },100);
+        });
 });
