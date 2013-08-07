@@ -1,12 +1,14 @@
-<div ng-repeat="thing in songs">
+<div id="player"></div>
+
+<div ng-repeat="thing in songs" class="thang">
     <div class="hero-unit song-entity">
-        <h1>8p</h1>
+        <h1 class="point">10p</h1>
         <div class="timebar-wrapper">
             <div class="timebar"></div>
         </div>
         <div class="timer"></div>
         <div class="choices-container">
-        	<div ng-repeat="suggestion in thing.suggestions" class="choices"><p>{{suggestion.title}}</p></div>
+        	<div ng-repeat="suggestion in thing.suggestions" class="choices {{suggestion.isoriginal}}"><p>{{suggestion.title}}</p></div>
         </div>
     </div>
 </div>
@@ -40,4 +42,7 @@
                 <p>Dela ditt resultat:</p> <div></div>
         </a>
     </div>
+</div>
+
+<div class="loader">
 </div>
