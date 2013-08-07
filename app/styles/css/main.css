@@ -463,6 +463,7 @@ body {
   margin: 0 auto;
   border: 0;
   width: 100%;
+  background: url(../../../images/left_frame.png) repeat-x;
   -webkit-user-select: none;
   -webkit-text-size-adjust: none;
   font-family: "Helvetica Neue", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif; }
@@ -491,11 +492,14 @@ h1 {
   left: 600px;
   top: 155px; }
 
+.left-pattern, .right-pattern {
+  min-width: 50px; }
+
 .container {
   background: url(../../../images/hakan_bg.jpg) repeat-x;
   background-position: 50% 0%;
   padding: 1em 0 0 0;
-  width: 1280px;
+  width: 960px;
   height: 788px;
   margin: 0 auto; }
   .container header {
@@ -657,7 +661,18 @@ h1 {
     margin: 20px 8px 0 0;
     background: url(../../../images/hakan_right.png);
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    -webkit-transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    -ms-transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1); }
+    .results .answers:hover {
+      -webkit-transform: translateY(-15px);
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -o-transform: translateY(-15px);
+      transform: translateY(-15px); }
   .results hr {
     background: #36becc;
     height: 1px;
