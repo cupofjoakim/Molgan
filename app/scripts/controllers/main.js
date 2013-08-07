@@ -68,6 +68,7 @@ angular.module('hakanlanar')
             }
         },
         startSong = function(){
+            time = 10;
             if(!playerDone){
                 onYouTubeIframeAPIReady();
             }
@@ -120,12 +121,13 @@ angular.module('hakanlanar')
             }, 300);
         },
         nextSong = function(){
-            $('.loader').show();
             time = 10;
+            $('.loader').show();
             $($('.song-entity')[current]).toggleClass('shown');
 
             if (current === 9){
                 showResults();
+                $('.loader').hide();
             } else {
                 current = current + 1;
                 $($('.song-entity')[current]).toggleClass('shown');
@@ -159,6 +161,10 @@ angular.module('hakanlanar')
                 } else {
                     answers.push({"nr": current, "correct": false , "points": 0});
                 }
+
+                player.stopVideo();
+                player.destroy();
+                playingyt = false;
 
                 $('.song-entity').find('.point').html(10 + 'p');
 

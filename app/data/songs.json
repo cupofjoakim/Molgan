@@ -76,7 +76,7 @@
                 "artist": "Tom Petty and the Heartbreakers",
                 "uri": "1tGfjSZgK6VwNZlWgov0K0",
                 "yt": "4XsufDwXu4w",
-                "startsat": "3",
+                "startsat": "03",
                 "suggestions": [
                     {
                         "title": "Kom igen Lena",
@@ -183,7 +183,7 @@
                     {
                         "title": "Visa vid vindens ängar",
                         "artist": "Håkan Hellström",
-                        "startsat": "00:=0",
+                        "startsat": "=0",
                         "uri": "0fmQ692NrBq51GSFVNV3og",
                         "yt": "",
                         "isoriginal": "notoriginal"
@@ -235,6 +235,40 @@
                         "artist": "Håkan Hellström",
                         "startsat": "0",
                         "uri": "3fq2Mnn7USvWSGwALCzsFV",
+                        "yt": "",
+                        "isoriginal": "original"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "titel": "Juli",
+                "artist": "Björn Olsson",
+                "uri": "0BqvvDT86H3mu4R24SKHy8",
+                "yt": "yfrwFxGoEu0",
+                "startsat": "15",
+                "suggestions": [
+                    {
+                        "title": "Förhoppningar och regnbågar",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "1w0KiISRudPcNCW1SfGk7D",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Klubbland",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "6QN99Sr4CgkxOG0AiUuIz9",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Jag har varit i alla städer",
+                        "artist": "Håkan Hellström",
+                        "startsat": "12",
+                        "uri": "4QmTigFSvsEPWc93V6EI7o",
                         "yt": "",
                         "isoriginal": "original"
                     }
@@ -313,7 +347,7 @@
                 "titel": "Don't Let Him Take Your Love From Me",
                 "artist": "Four Tops",
                 "uri": "4qJ9Ljh65Wokwll0QTXDu0",
-                "yt": "NrYdzKqTxTA",
+                "yt": "f8-c-jAcF6o",
                 "startsat": "0",
                 "suggestions": [
                     {
@@ -335,7 +369,7 @@
                     {
                         "title": "Augusti i helvetet",
                         "artist": "Håkan Hellström",
-                        "startsat": "00:04",
+                        "startsat": "04",
                         "uri": "75TpJM9FfVciRnBeauyQIq",
                         "yt": "",
                         "isoriginal": "original"
@@ -377,6 +411,74 @@
                 ]
             },
              {
+                "id": 14,
+                "titel": "Canine Prey",
+                "artist": "Tapefly",
+                "uri": "Won1Y6Mcv6eKd0nlRMwbP",
+                "yt": "neTtXMnEMG0",
+                "startsat": "0",
+                "suggestions": [
+                    {
+                        "title": "Jag har varit i alla städer",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "4QmTigFSvsEPWc93V6EI7o",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Tro och tvivel",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "23kf0uHqgYqqYqRNLjJOTH",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "För en lång lång tid",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "3fq2Mnn7USvWSGwALCzsFV",
+                        "yt": "",
+                        "isoriginal": "original"
+                    }
+                ]
+            },
+             {
+                "id": 15,
+                "titel": "Foggy Days",
+                "artist": "The Plan",
+                "uri": "0qRyzgUoOoidlvZiSCnc8H",
+                "yt": "H9bP8s8RUWU",
+                "startsat": "0",
+                "suggestions": [
+                    {
+                        "title": "Äntligen på väg",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "3sKpv29OT60Bj1nqMTk5vp",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Trubbel",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "3L6C4MG2zFzZ5CE1JQ9tCo",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Dom dimmiga dagarna",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "3L6C4MG2zFzZ5CE1JQ9tCo",
+                        "yt": "",
+                        "isoriginal": "original"
+                    }
+                ]
+            },
+             {
                 "id": 17,
                 "titel": "When you were young",
                 "artist": "The Killers",
@@ -403,7 +505,7 @@
                     {
                         "title": "Det kommer aldrig va över för mig",
                         "artist": "Håkan Hellström",
-                        "startsat": "00:15",
+                        "startsat": "15",
                         "uri": "44hYA9EB6IVtSLmhg2gfEN",
                         "yt": "",
                         "isoriginal": "original"
@@ -411,8 +513,178 @@
                 ]
             },
              {
+                "id": 18,
+                "titel": "Coming in to Los Angeles",
+                "artist": "Sarah Lee Guthrie",
+                "uri": "7CTg8yXDOl4SIPfRmE1OJx",
+                "yt": "otukeM6BA14",
+                "startsat": "28",
+                "suggestions": [
+                    {
+                        "title": "Äntligen på väg",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "3sKpv29OT60Bj1nqMTk5vp",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Det är så jag säger det",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "3nJtKV23cLqdMzurBX49Tq",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Jag har varit i alla städer",
+                        "artist": "Håkan Hellström",
+                        "startsat": "02:19",
+                        "uri": "4QmTigFSvsEPWc93V6EI7o",
+                        "yt": "",
+                        "isoriginal": "original"
+                    }
+                ]
+            },
+             {
+                "id": 19,
+                "titel": "Write",
+                "artist": "The Crepes",
+                "uri": "3mkINGYJkQsg1x7smLodIm",
+                "yt": "OsZITY6icSw",
+                "startsat": "0",
+                "suggestions": [
+                    {
+                        "title": "River en vacker dröm",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "4Tdc5l6RUT5HqGJiKC70bj",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Det här är min tid",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "1ZjYhlyj6lSDEJQvLgngyV",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Vid protesfabrikens stängsel",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "6j4BH7YeHTUesFmqoRrYLz",
+                        "yt": "",
+                        "isoriginal": "original"
+                    }
+                ]
+            },
+             {
+                "id": 20,
+                "titel": "Hello!",
+                "artist": "Björn Olsson",
+                "uri": "6nF2mCqDvooqIiOKCdpWPB",
+                "yt": "u7tDXNs2Ap0",
+                "startsat": "23",
+                "suggestions": [
+                    {
+                        "title": "Här kommer lyckan för hundar som oss",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "0H891KFUg15VBMWBZEiIVy",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Jag har varit i alla städer",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "4QmTigFSvsEPWc93V6EI7o",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Det här är min tid",
+                        "artist": "Håkan Hellström",
+                        "startsat": "12",
+                        "uri": "1ZjYhlyj6lSDEJQvLgngyV",
+                        "yt": "",
+                        "isoriginal": "original"
+                    }
+                ]
+            },
+             {
+                "id": 21,
+                "titel": "Göteborg",
+                "artist": "Björn Olsson",
+                "uri": "6VV7GmMMiCDia5mCzc17l5",
+                "yt": "D07dU8_s8lM",
+                "startsat": "10",
+                "suggestions": [
+                    {
+                        "title": "Vi två 17 år",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "7iF3kDevjtxEtZcIjZxqWs",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Jag var bara inte gjord för dessa dar",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "4jw37be7lRkmbZ9p6ENGD9",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Den fulaste flickan i världen",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "6dH1kap3QZhnt5Q27lAgQQ",
+                        "yt": "",
+                        "isoriginal": "original"
+                    }
+                ]
+            },
+             {
+                "id": 31,
+                "titel": "Gitarrmelodi",
+                "artist": "Björn Olsson",
+                "uri": "4a8gThnkKuUNaYorsxE5bR",
+                "yt": "liRP3iGTYPI",
+                "startsat": "09",
+                "suggestions": [
+                    {
+                        "title": "Brännö serenad",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "6LipX4Z8HMrxYvzcXUWzTa",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Den fulaste flickan i världen",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "6dH1kap3QZhnt5Q27lAgQQ",
+                        "yt": "",
+                        "isoriginal": "notoriginal"
+                    },
+                    {
+                        "title": "Vaggvisa för flyktbenägna",
+                        "artist": "Håkan Hellström",
+                        "startsat": "0",
+                        "uri": "0imibEEte3feHb2duTCsrN",
+                        "yt": "",
+                        "isoriginal": "original"
+                    }
+                ]
+            },
+             {
                 "id": 22,
-                "titel": "Bakom år 2000",
+                "titel": "Bakom år 20",
                 "artist": "Wilmer X",
                 "uri": "3uBWRbK3xyuvybFKrxxEbr",
                 "yt": "gshcs6eEdaU",
@@ -450,7 +722,7 @@
                 "artist": "The Isley Brothers",
                 "uri": "0i6tMLdaDDhiNqKTWa0EEi",
                 "yt": "04aUTycMHng",
-                "startsat": "4",
+                "startsat": "04",
                 "suggestions": [
                     {
                         "title": "Vaggvisa för flyktbenägna",
@@ -471,7 +743,7 @@
                     {
                         "title": "Brännö Serenad",
                         "artist": "Håkan Hellström",
-                        "startsat": "00:07",
+                        "startsat": "07",
                         "uri": "6LipX4Z8HMrxYvzcXUWzTa",
                         "yt": "",
                         "isoriginal": "original"
@@ -484,7 +756,7 @@
                 "artist": "Tommy James and the Shondells",
                 "uri": "4gxaW9GptUInJt5RYljbmn",
                 "yt": "IkMFLUXTEwM",
-                "startsat": "8",
+                "startsat": "08",
                 "suggestions": [
                     {
                         "title": "Saknade te havs",
@@ -505,7 +777,7 @@
                     {
                         "title": "Uppsnärjd i det blå",
                         "artist": "Håkan Hellström",
-                        "startsat": "00:38",
+                        "startsat": "38",
                         "uri": "2z3qJXTXRes9cqkPRKqN4g",
                         "yt": "",
                         "isoriginal": "original"
@@ -586,7 +858,7 @@
                 "artist": "Andrew Lloyd Webber",
                 "uri": "3uBWRbK3xyuvybFKrxxEbr",
                 "yt": "rkFjC6xyp3Q",
-                "startsat": "5",
+                "startsat": "05",
                 "suggestions": [
                     {
                         "title": "Tro och tvivel",

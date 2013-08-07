@@ -879,9 +879,9 @@ h1 {
 .loader {
   background: url(http://24.media.tumblr.com/1505888f40533ea02f253d6f2b94ae03/tumblr_mq8yglppqT1sbdc51o1_500.gif);
   background-size: cover;
-  width: 500px;
-  height: 500px;
+  width: 326px;
+  height: 200px;
   position: absolute;
-  top: 178px;
-  left: calc(50% - 250px);
+  top: 200px;
+  left: calc(50% - 163px);
 }
