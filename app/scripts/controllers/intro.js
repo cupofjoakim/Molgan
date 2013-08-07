@@ -5,4 +5,5 @@ angular.module('hakanlanar')
   	var speechBubble = $('.intro-container').find('div');
 
   	speechBubble.addClass('slideUp');
+  	$(document).find('audio')[0].play();
   });

@@ -447,9 +447,9 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'helvetica_cyplain';
-  src: url("../../../font/helveticacy-webfont.eot");
-  src: url("../../../font/helveticacy-webfont.eot?#iefix") format("embedded-opentype"), url("../../../font/helveticacy-webfont.woff") format("woff"), url("../../../font/helveticacy-webfont.ttf") format("truetype"), url("../../../font/helveticacy-webfont.svg#helvetica_cyplain") format("svg");
+  font-family: 'helveticaneuehackregular';
+  src: url("../../../font/helvetica/helveticaneuehack-webfont.eot");
+  src: url("../../../font/helvetica/helveticaneuehack-webfont.eot?#iefix") format("embedded-opentype"), url("../../../font/helvetica/helveticaneuehack-webfont.woff") format("woff"), url("../../../font/helvetica/helveticaneuehack-webfont.ttf") format("truetype"), url("../../../font/helvetica/helveticaneuehack-webfont.svg#helveticaneuehackregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -466,7 +466,7 @@ body {
   background: url(../../images/left_frame.png) repeat-x;
   -webkit-user-select: none;
   -webkit-text-size-adjust: none;
-  font-family: "Helvetica Neue", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif; }
+  font-family: "helveticaneuehackregular", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif; }
 
 ul,
 ol {
@@ -561,11 +561,11 @@ h1 {
       position: absolute;
       width: 263px;
       color: #36becc;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: bold;
       left: 159px;
       top: 10px;
-      line-height: 1.3em; }
+      line-height: 1.4em; }
 
 .timebar-wrapper {
   overflow-x: hidden;

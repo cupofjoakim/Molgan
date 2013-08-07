@@ -12,7 +12,7 @@ body {
     background: url(../../images/left_frame.png) repeat-x;
     -webkit-user-select:none;
     -webkit-text-size-adjust:none;
-    font-family: "Helvetica Neue", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+    font-family: "helveticaneuehackregular", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
 }
 ul,
 ol {
@@ -103,11 +103,11 @@ h1 {
             position: absolute;
             width: 263px;
             color: $blue;
-            font-size: 1.5em;
+            font-size: 1.3em;
             font-weight: bold;
             left: 159px;
             top: 10px;
-            line-height: 1.3em;
+            line-height: 1.4em;
         }
     }
 }
