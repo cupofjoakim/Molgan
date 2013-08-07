@@ -4,14 +4,15 @@
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body {
-    color: $black;
+    // color: $black;
     padding:0;
     margin:0 auto;
     border:0;
     width: 100%;
+    background: url(../../../images/left_frame.png) repeat-x;
     -webkit-user-select:none;
     -webkit-text-size-adjust:none;
-    font-family: "Helvetica", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+    font-family: "Helvetica Neue", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
 }
 ul,
 ol {
@@ -26,7 +27,7 @@ h4,
 li,
 a,
 p {
-    color: $black;
+    // color: $black;
     font-size: 13px;
     line-height: 16px;
 }
@@ -35,22 +36,35 @@ h1 {
     text-align: center;
     color: $blue;
     font-size: 3em;
-    font-family: 'Helvetica CY';
     position: absolute;
     left: 600px;
     top: 155px;
 }
+
+.left-pattern, .right-pattern, .container {
+    // @include inlineblock;
+}
+
+.left-pattern, .right-pattern {
+    min-width: 50px;
+}
+
+// .left-pattern {
+//     background: url(../../../images/left_frame.png) repeat-x;
+//     min-height: 800px;
+// }
+
+// .right-pattern {
+//     background: url(../../../images/right_frame.png) repeat-x;
+//     min-height: 800px;
+// }
 
 .container {
 
     background: url(../../../images/hakan_bg.jpg) repeat-x;
     background-position: 50% 0%;
     padding: 1em 0 0 0;
-    // -webkit-background-size: cover;
-    //    -moz-background-size: cover;
-    //      -o-background-size: cover;
-    //         background-size: cover;
-    width: 1280px;
+    width: 960px;
     height: 788px;
     margin: 0 auto;
     header {
@@ -73,21 +87,45 @@ h1 {
         display: block;
         width: 236px;
         height: 86px;
-        background: url(../../../images/start_button.png);
+        background: $blue;
+        border-radius: 4px;
+        // background: url(../../../images/start_button.png);
+        @include transition(background-color 250ms);
+        &:hover {
+            background: $green;
+        }
+        div {
+            background: url(../../../images/start.png) no-repeat;
+            width: 99px;
+            height: 40px;
+            display: block;
+            margin: 1.8em auto 0 auto;
+        }
     }
 
-    div {
+    > div {
         position: absolute;
         left: 487px;
         top: 15px;
         width: 468px;
         height: 268px;
         background: url(../../../images/prat_start.png);
+        opacity: 0;
+        @include transform(translateY(100px));
+        &.slideUp {
+            @include transform(translateY(0px));
+            opacity: 1;
+            @include transition(all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000));
+        }
         p {
             position: absolute;
             width: 263px;
             color: $blue;
-            left: 144px;
+            font-size: 1.5em;
+            font-weight: bold;
+            left: 159px;
+            top: 10px;
+            line-height: 1.3em;
         }
     }
 }
@@ -105,7 +143,7 @@ h1 {
 
 .timebar {
     height: 3em;
-    background: $blue;
+    background: $green;
     color: white;
     &.active {
         @include transition(-webkit-transform 250ms);
@@ -120,9 +158,11 @@ h1 {
     }
 }
 .choices {
-    width: 178px;
-    height: 171px;
-    background: url(../../../images/val_button.png);
+    width: 199px;
+    height: 202px;
+    background: url(../../../images/val_stor_ny.png);
+    margin: 0 2em 0 0;
+    @include transition(all 250ms cubic-bezier(0.645, 0.045, 0.355, 1.000));
     @include inlineblock;
     &:before {
         content: '';
@@ -130,6 +170,9 @@ h1 {
         height: 100%;
         vertical-align: middle;
         margin-right: -0.25em; /* Adjusts for spacing */
+    }
+    &:hover {
+        @include transform(translateY(-20px));
     }
 
     p {
@@ -143,16 +186,71 @@ h1 {
         margin: 0 auto;
         vertical-align: middle;
         display: inline-block;
+        word-wrap:break-word;
     }
 }
 
 .choices-container {
-    width: 534px;
-    margin: 80px auto 0 auto;
+    width: 693px;
+    margin: 6em auto 0 auto;
 }
 
 .results {
     display: none;
+    width: 620px;
+    padding: 20px 26px;
+    background: white;
+    border-radius: 4px;
+    margin: 2em auto 0 auto;
+    color: $blue;
+    font-weight: bold;
+
+    h3, h2 {
+        text-align: center;
+    }
+
+    h2 {
+        color: $red;
+        font-size: 4em;
+    }
+
+    .answers {
+        width: 45px;
+        height: 49px;
+        margin: 20px 8px 0 0;
+        background: url(../../../images/hakan_right.png);
+        @include inlineblock;
+        @include transition(all 150ms cubic-bezier(0.645, 0.045, 0.355, 1.000));
+        &:hover {
+            @include transform(translateY(-15px));
+        }
+    }
+
+    hr {
+        background: $blue;
+        height: 1px;
+        border: none;
+    }
+    .share {
+        text-align: right;
+
+        a {
+            text-decoration: none;
+            color: $blue;
+
+            p {
+                line-height: 1px;
+                display: inline-block;
+            }
+
+            div {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background: url(../../../images/facebook_icon.png) no-repeat;
+            }
+        }
+    }
 }
 .thang {
     display: none;
@@ -163,12 +261,11 @@ h1 {
 }
 
 .loader {
-    background: url(http://www.stereotude.com/sites/stereotude.com/files/anigif_enhanced-buzz-24647-1372352926-37.gif);
+    background: url(http://24.media.tumblr.com/1505888f40533ea02f253d6f2b94ae03/tumblr_mq8yglppqT1sbdc51o1_500.gif);
     background-size: cover;
     width: 500px;
     height: 500px;
     position: absolute;
     top: 178px;
     left: calc(50% - 250px);
-    margin: 0 auto;
 }

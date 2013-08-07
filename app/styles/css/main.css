@@ -548,6 +548,14 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'helvetica_cyplain';
+  src: url("../../../font/helveticacy-webfont.eot");
+  src: url("../../../font/helveticacy-webfont.eot?#iefix") format("embedded-opentype"), url("../../../font/helveticacy-webfont.woff") format("woff"), url("../../../font/helveticacy-webfont.ttf") format("truetype"), url("../../../font/helveticacy-webfont.svg#helvetica_cyplain") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* line 4, ../scss/main.scss */
 * {
   -moz-box-sizing: border-box;
@@ -557,17 +565,17 @@ table {
 
 /* line 6, ../scss/main.scss */
 body {
-  color: black;
   padding: 0;
   margin: 0 auto;
   border: 0;
   width: 100%;
+  background: url(../../../images/left_frame.png) repeat-x;
   -webkit-user-select: none;
   -webkit-text-size-adjust: none;
-  font-family: "Helvetica", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+  font-family: "Helvetica Neue", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
 }
 
-/* line 17, ../scss/main.scss */
+/* line 18, ../scss/main.scss */
 ul,
 ol {
   margin: 0;
@@ -575,7 +583,7 @@ ol {
   list-style: 0;
 }
 
-/* line 28, ../scss/main.scss */
+/* line 29, ../scss/main.scss */
 h1,
 h2,
 h3,
@@ -583,32 +591,35 @@ h4,
 li,
 a,
 p {
-  color: black;
   font-size: 13px;
   line-height: 16px;
 }
 
-/* line 34, ../scss/main.scss */
+/* line 35, ../scss/main.scss */
 h1 {
   text-align: center;
   color: #36becc;
   font-size: 3em;
-  font-family: 'Helvetica CY';
   position: absolute;
   left: 600px;
   top: 155px;
 }
 
-/* line 44, ../scss/main.scss */
+/* line 48, ../scss/main.scss */
+.left-pattern, .right-pattern {
+  min-width: 50px;
+}
+
+/* line 62, ../scss/main.scss */
 .container {
   background: url(../../../images/hakan_bg.jpg) repeat-x;
   background-position: 50% 0%;
   padding: 1em 0 0 0;
-  width: 1280px;
+  width: 960px;
   height: 788px;
   margin: 0 auto;
 }
-/* line 56, ../scss/main.scss */
+/* line 70, ../scss/main.scss */
 .container header {
   background: url(../../../images/header.png) no-repeat;
   width: 58.750em;
@@ -616,14 +627,14 @@ h1 {
   margin: 0 auto;
 }
 
-/* line 64, ../scss/main.scss */
+/* line 78, ../scss/main.scss */
 .intro-container {
   position: relative;
   width: 960px;
   height: 500px;
   margin: 0 auto;
 }
-/* line 69, ../scss/main.scss */
+/* line 83, ../scss/main.scss */
 .intro-container a {
   position: absolute;
   left: 340px;
@@ -631,26 +642,68 @@ h1 {
   display: block;
   width: 236px;
   height: 86px;
-  background: url(../../../images/start_button.png);
+  background: #36becc;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms;
+  -moz-transition: background-color 250ms;
+  -ms-transition: background-color 250ms;
+  -o-transition: background-color 250ms;
+  transition: background-color 250ms;
 }
-/* line 79, ../scss/main.scss */
-.intro-container div {
+/* line 94, ../scss/main.scss */
+.intro-container a:hover {
+  background: #8bcc36;
+}
+/* line 97, ../scss/main.scss */
+.intro-container a div {
+  background: url(../../../images/start.png) no-repeat;
+  width: 99px;
+  height: 40px;
+  display: block;
+  margin: 1.8em auto 0 auto;
+}
+/* line 106, ../scss/main.scss */
+.intro-container > div {
   position: absolute;
   left: 487px;
   top: 15px;
   width: 468px;
   height: 268px;
   background: url(../../../images/prat_start.png);
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
 }
-/* line 86, ../scss/main.scss */
-.intro-container div p {
+/* line 115, ../scss/main.scss */
+.intro-container > div.slideUp {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+  -webkit-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+/* line 120, ../scss/main.scss */
+.intro-container > div p {
   position: absolute;
   width: 263px;
   color: #36becc;
-  left: 144px;
+  font-size: 1.5em;
+  font-weight: bold;
+  left: 159px;
+  top: 10px;
+  line-height: 1.3em;
 }
 
-/* line 96, ../scss/main.scss */
+/* line 134, ../scss/main.scss */
 .timebar-wrapper {
   overflow-x: hidden;
   background: #d9d7d7;
@@ -665,13 +718,13 @@ h1 {
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.6);
 }
 
-/* line 106, ../scss/main.scss */
+/* line 144, ../scss/main.scss */
 .timebar {
   height: 3em;
-  background: #36becc;
+  background: #8bcc36;
   color: white;
 }
-/* line 110, ../scss/main.scss */
+/* line 148, ../scss/main.scss */
 .timebar.active {
   -webkit-transition: -webkit-transform 250ms;
   -moz-transition: -webkit-transform 250ms;
@@ -680,24 +733,30 @@ h1 {
   transition: -webkit-transform 250ms;
 }
 
-/* line 115, ../scss/main.scss */
+/* line 153, ../scss/main.scss */
 .song-entity {
   display: none;
 }
-/* line 118, ../scss/main.scss */
+/* line 156, ../scss/main.scss */
 .song-entity.shown {
   display: block;
 }
 
-/* line 122, ../scss/main.scss */
+/* line 160, ../scss/main.scss */
 .choices {
-  width: 178px;
-  height: 171px;
-  background: url(../../../images/val_button.png);
+  width: 199px;
+  height: 202px;
+  background: url(../../../images/val_stor_ny.png);
+  margin: 0 2em 0 0;
+  -webkit-transition: all 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
   display: inline-block;
   vertical-align: top;
 }
-/* line 127, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 .choices:before {
   content: '';
   display: inline-block;
@@ -706,7 +765,15 @@ h1 {
   margin-right: -0.25em;
   /* Adjusts for spacing */
 }
-/* line 135, ../scss/main.scss */
+/* line 174, ../scss/main.scss */
+.choices:hover {
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+/* line 178, ../scss/main.scss */
 .choices p {
   text-align: center;
   color: #d03838;
@@ -718,38 +785,103 @@ h1 {
   margin: 0 auto;
   vertical-align: middle;
   display: inline-block;
+  word-wrap: break-word;
 }
 
-/* line 149, ../scss/main.scss */
+/* line 193, ../scss/main.scss */
 .choices-container {
-  width: 534px;
-  margin: 80px auto 0 auto;
+  width: 693px;
+  margin: 6em auto 0 auto;
 }
 
-/* line 154, ../scss/main.scss */
+/* line 198, ../scss/main.scss */
 .results {
   display: none;
+  width: 620px;
+  padding: 20px 26px;
+  background: white;
+  border-radius: 4px;
+  margin: 2em auto 0 auto;
+  color: #36becc;
+  font-weight: bold;
+}
+/* line 208, ../scss/main.scss */
+.results h3, .results h2 {
+  text-align: center;
+}
+/* line 212, ../scss/main.scss */
+.results h2 {
+  color: #d03838;
+  font-size: 4em;
+}
+/* line 217, ../scss/main.scss */
+.results .answers {
+  width: 45px;
+  height: 49px;
+  margin: 20px 8px 0 0;
+  background: url(../../../images/hakan_right.png);
+  display: inline-block;
+  vertical-align: top;
+  -webkit-transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+/* line 224, ../scss/main.scss */
+.results .answers:hover {
+  -webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  -o-transform: translateY(-15px);
+  transform: translateY(-15px);
+}
+/* line 229, ../scss/main.scss */
+.results hr {
+  background: #36becc;
+  height: 1px;
+  border: none;
+}
+/* line 234, ../scss/main.scss */
+.results .share {
+  text-align: right;
+}
+/* line 237, ../scss/main.scss */
+.results .share a {
+  text-decoration: none;
+  color: #36becc;
+}
+/* line 241, ../scss/main.scss */
+.results .share a p {
+  line-height: 1px;
+  display: inline-block;
+}
+/* line 246, ../scss/main.scss */
+.results .share a div {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../../../images/facebook_icon.png) no-repeat;
 }
 
-/* line 157, ../scss/main.scss */
+/* line 255, ../scss/main.scss */
 .thang {
   display: none;
 }
 
-/* line 160, ../scss/main.scss */
+/* line 258, ../scss/main.scss */
 #player {
   position: absolute;
   left: -50000px;
 }
 
-/* line 165, ../scss/main.scss */
+/* line 263, ../scss/main.scss */
 .loader {
-  background: url(http://www.stereotude.com/sites/stereotude.com/files/anigif_enhanced-buzz-24647-1372352926-37.gif);
+  background: url(http://24.media.tumblr.com/1505888f40533ea02f253d6f2b94ae03/tumblr_mq8yglppqT1sbdc51o1_500.gif);
   background-size: cover;
   width: 500px;
   height: 500px;
   position: absolute;
   top: 178px;
   left: calc(50% - 250px);
-  margin: 0 auto;
 }
