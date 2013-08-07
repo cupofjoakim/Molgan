@@ -744,6 +744,7 @@ h1 {
 
 /* line 160, ../scss/main.scss */
 .choices {
+  cursor: pointer;
   width: 199px;
   height: 202px;
   background: url(../../../images/val_stor_ny.png);
@@ -756,7 +757,7 @@ h1 {
   display: inline-block;
   vertical-align: top;
 }
-/* line 167, ../scss/main.scss */
+/* line 168, ../scss/main.scss */
 .choices:before {
   content: '';
   display: inline-block;
@@ -765,7 +766,7 @@ h1 {
   margin-right: -0.25em;
   /* Adjusts for spacing */
 }
-/* line 174, ../scss/main.scss */
+/* line 175, ../scss/main.scss */
 .choices:hover {
   -webkit-transform: translateY(-20px);
   -moz-transform: translateY(-20px);
@@ -773,7 +774,7 @@ h1 {
   -o-transform: translateY(-20px);
   transform: translateY(-20px);
 }
-/* line 178, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 .choices p {
   text-align: center;
   color: #d03838;
@@ -788,13 +789,13 @@ h1 {
   word-wrap: break-word;
 }
 
-/* line 193, ../scss/main.scss */
+/* line 194, ../scss/main.scss */
 .choices-container {
   width: 693px;
   margin: 6em auto 0 auto;
 }
 
-/* line 198, ../scss/main.scss */
+/* line 199, ../scss/main.scss */
 .results {
   display: none;
   width: 620px;
@@ -805,16 +806,16 @@ h1 {
   color: #36becc;
   font-weight: bold;
 }
-/* line 208, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 .results h3, .results h2 {
   text-align: center;
 }
-/* line 212, ../scss/main.scss */
+/* line 213, ../scss/main.scss */
 .results h2 {
   color: #d03838;
   font-size: 4em;
 }
-/* line 217, ../scss/main.scss */
+/* line 218, ../scss/main.scss */
 .results .answers {
   width: 45px;
   height: 49px;
@@ -828,7 +829,7 @@ h1 {
   -o-transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-/* line 224, ../scss/main.scss */
+/* line 225, ../scss/main.scss */
 .results .answers:hover {
   -webkit-transform: translateY(-15px);
   -moz-transform: translateY(-15px);
@@ -836,27 +837,27 @@ h1 {
   -o-transform: translateY(-15px);
   transform: translateY(-15px);
 }
-/* line 229, ../scss/main.scss */
+/* line 230, ../scss/main.scss */
 .results hr {
   background: #36becc;
   height: 1px;
   border: none;
 }
-/* line 234, ../scss/main.scss */
+/* line 235, ../scss/main.scss */
 .results .share {
   text-align: right;
 }
-/* line 237, ../scss/main.scss */
+/* line 238, ../scss/main.scss */
 .results .share a {
   text-decoration: none;
   color: #36becc;
 }
-/* line 241, ../scss/main.scss */
+/* line 242, ../scss/main.scss */
 .results .share a p {
   line-height: 1px;
   display: inline-block;
 }
-/* line 246, ../scss/main.scss */
+/* line 247, ../scss/main.scss */
 .results .share a div {
   display: inline-block;
   width: 30px;
@@ -864,18 +865,18 @@ h1 {
   background: url(../../../images/facebook_icon.png) no-repeat;
 }
 
-/* line 255, ../scss/main.scss */
+/* line 256, ../scss/main.scss */
 .thang {
   display: none;
 }
 
-/* line 258, ../scss/main.scss */
+/* line 259, ../scss/main.scss */
 #player {
   position: absolute;
   left: -50000px;
 }
 
-/* line 263, ../scss/main.scss */
+/* line 264, ../scss/main.scss */
 .loader {
   background: url(http://24.media.tumblr.com/1505888f40533ea02f253d6f2b94ae03/tumblr_mq8yglppqT1sbdc51o1_500.gif);
   background-size: cover;
@@ -884,4 +885,8 @@ h1 {
   position: absolute;
   top: 200px;
   left: calc(50% - 163px);
+}
+/* line 273, ../scss/main.scss */
+.loader.hidden {
+  left: -500000px;
 }

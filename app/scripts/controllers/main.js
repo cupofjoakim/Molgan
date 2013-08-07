@@ -58,6 +58,7 @@ angular.module('hakanlanar')
             }
         },
         onPlayerReady = function(event){
+            event.target.seekTo($scope.songs[current].startsat);
             event.target.playVideo();
             playingyt = true;
         },
@@ -84,6 +85,7 @@ angular.module('hakanlanar')
             var countDownRunning = false;
             var countDown = function(){
                 var timeBarWidth = timeBar.width();
+                clearInterval(timer);
                 var timer = setInterval(function(){
                     posX -= timeBarWidth / 10;
                     timeBar.css({'-webkit-transform': 'translateX('+ posX +'px)'});
@@ -95,14 +97,14 @@ angular.module('hakanlanar')
                         $('.song-entity').find('.point').html(time + 'p');
                     }
 
-                    if (time <= 0) {
+                    if (time === 0) {
                         clearInterval(timer);
                         countDownRunning = false;
                         timeOut();
                     }
                 }, 1000);
 
-                $('.choices').on('click', function(){
+                $('.choices-container').on('click', function(){
                     clearInterval(timer);
                     playingyt = false;
                     player.stopVideo();
@@ -112,11 +114,19 @@ angular.module('hakanlanar')
             var loadingInterval = setInterval(function(){
                 console.log(player.getPlayerState());
                 if(player.getPlayerState() === 1 && !countDownRunning){
+                    clearInterval(loadingInterval);
                     $('.loader').hide();
                     $($('.thang')[current]).show();
-                    countDown();
+                    setTimeout(function(){
+                        //if(!countDownRunning){
+                            countDown();
+                        // } else {
+                        //     console.log('clearing interval');
+                        //     clearInterval(timer);
+                        //     countDownRunning = false;
+                        // }
+                    }, 1000);
                     countDownRunning = true;
-                    clearInterval(loadingInterval);
                 }
             }, 300);
         },
@@ -125,7 +135,7 @@ angular.module('hakanlanar')
             $('.loader').show();
             $($('.song-entity')[current]).toggleClass('shown');
 
-            if (current === 9){
+            if (current === 9 || current === 10){
                 showResults();
                 $('.loader').hide();
             } else {
@@ -133,6 +143,9 @@ angular.module('hakanlanar')
                 $($('.song-entity')[current]).toggleClass('shown');
                 startSong();
             }
+        },
+        submitAnswers = function(){
+
         },
         timeOut = function(){
             if(playingyt){
@@ -145,6 +158,19 @@ angular.module('hakanlanar')
         },
         showResults = function(){
             $('.pointstotal').html($scope.points);
+
+            var html = "";
+
+            for (var i = 10 - 1; i >= 0; i--) {
+                if (answers[i].correct){
+                    var correct = "";
+                } else {
+                    var correct = "wrong";
+                }
+                html = html + "<div class='answers " + correct + "'></div>";
+            };
+
+            $('.answers-cont').html(html);
             $('.results').show();
         };
 
