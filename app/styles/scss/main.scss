@@ -45,24 +45,10 @@ h1 {
     // @include inlineblock;
 }
 
-.left-pattern, .right-pattern {
-    min-width: 50px;
-}
-
-// .left-pattern {
-//     background: url(../../../images/left_frame.png) repeat-x;
-//     min-height: 800px;
-// }
-
-// .right-pattern {
-//     background: url(../../../images/right_frame.png) repeat-x;
-//     min-height: 800px;
-// }
-
 .container {
 
-    background: url(../../../images/hakan_bg.jpg) repeat-x; 
-    background-position: 50% 0%;
+    background: url(../../../images/hakan_face.png) no-repeat; 
+    background-position: 140% 110%;
     padding: 1em 0 0 0;
     width: 960px;
     height: 788px;

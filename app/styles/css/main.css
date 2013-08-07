@@ -492,12 +492,9 @@ h1 {
   left: 600px;
   top: 155px; }
 
-.left-pattern, .right-pattern {
-  min-width: 50px; }
-
 .container {
-  background: url(../../../images/hakan_bg.jpg) repeat-x;
-  background-position: 50% 0%;
+  background: url(../../../images/hakan_face.png) no-repeat;
+  background-position: 140% 110%;
   padding: 1em 0 0 0;
   width: 960px;
   height: 788px;
