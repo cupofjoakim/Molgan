@@ -43,7 +43,7 @@ h1 {
 
 .container {
 
-    background: url(../../../images/hakan_bg.jpg) repeat-x; 
+    background: url(../../../images/hakan_bg.jpg) repeat-x;
     background-position: 50% 0%;
     padding: 1em 0 0 0;
     // -webkit-background-size: cover;
@@ -153,4 +153,22 @@ h1 {
 
 .results {
     display: none;
+}
+.thang {
+    display: none;
+}
+#player {
+    position:absolute;
+    left: -50000px;
+}
+
+.loader {
+    background: url(http://www.stereotude.com/sites/stereotude.com/files/anigif_enhanced-buzz-24647-1372352926-37.gif);
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 178px;
+    left: calc(50% - 250px);
+    margin: 0 auto;
 }
